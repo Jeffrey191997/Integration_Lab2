@@ -22,8 +22,8 @@ const LoginForm = ({ handleClose = () => { }, setIsLogin = () => { } }) => {
       onSuccess: (data) => {
         if (data.data.success) {
           setUser({
-            username: data.data.username,
-            email: data.data.email,
+            username: data.data.data.username,
+            email: data.data.data.email,
           });
           handleClose();
           setStatus({
