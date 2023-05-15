@@ -13,7 +13,7 @@ const Home = ({ user = {}, setStatus = () => {} }) => {
   const [openCreate, setOpenCreate] = useState(false);
   const [notes, setNotes] = useState([]);
   const navigate = useNavigate();
-  const { setUser } = useContext(GlobalContext);
+  const {user, setUser } = useContext(GlobalContext);
 
   useEffect(() => {
     const userToken = Cookies.get('UserToken');
