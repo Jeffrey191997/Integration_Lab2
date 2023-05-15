@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import GlobalContext from '../../share/context/GlobalContext';
 
-const Home = ({ user = {}, setStatus = () => {} }) => {
+const Home = ({ setStatus = () => {} }) => {
   const [openCreate, setOpenCreate] = useState(false);
   const [notes, setNotes] = useState([]);
   const navigate = useNavigate();
